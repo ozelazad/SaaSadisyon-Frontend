@@ -7,7 +7,7 @@ import Badge from "../components/ui/Badge.jsx";
 import Skeleton from "../components/ui/Skeleton.jsx";
 import { useToast } from "../components/ui/ToastProvider.jsx";
 
-const socket = io((import.meta.env.VITE_API_URL || "http://localhost:8000/api").replace("/api", ""), {
+const socket = io((import.meta.env.VITE_API_URL || "  ").replace("/api", ""), {
   auth: { customer_id: localStorage.getItem("cid") || localStorage.getItem("customerId") },
 });
 
